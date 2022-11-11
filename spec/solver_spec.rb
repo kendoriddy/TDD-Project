@@ -19,3 +19,22 @@ describe 'factorial value:' do
         expect { solver.factorial(-9) }.to raise_error('num cannot be negative')
     end
 end
+
+describe 'reverse a word - ' do
+    it 'should return the given word in reverse' do
+      expect(solver.reverse('kenny')).to eq('ynnek')
+    end
+
+    it 'should return the given word in reverse' do
+      expect(solver.reverse('microverse')).to eq('esrevorcim')
+    end
+
+    it 'should return the given word in reverse' do
+        expect(solver.reverse('hello')).to eq('olleh')
+    end
+
+    it 'should return the given word in reverse' do
+      expect(solver.reverse('A')).to eq('A')
+    end
+
+  end
