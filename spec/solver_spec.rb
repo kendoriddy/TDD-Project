@@ -37,3 +37,21 @@ describe 'reverse a word - ' do
     expect(solver.reverse('A')).to eq('A')
   end
 end
+
+describe 'string fizzbuzz:' do
+    it "should return 'fizz' if num % 3 == 0 " do
+        expect(solver.fizz_buzz(6))to eq('fizz')
+    end
+
+    it "should return 'fizz' if num % 5 == 0 " do
+        expect(solver.fizz_buzz(10))to eq('buzz')
+    end
+
+    it "should return 'fizz' if num % 15 == 0 " do
+        expect(solver.fizz_buzz(6))to eq('fizzbuzz')
+    end
+
+    it "should return 'num' if num is not divisible by either 3 or 5" do
+        expect(solver.fizz_buzz(4)).to eq('4')
+    end
+end
