@@ -25,3 +25,5 @@ class Solver
     end
   end
 end
+solver = Solver.new
+solver.factorial(-1)
